@@ -1,0 +1,3 @@
+[submodule "funix"]
+	path = funix
+	url = https://github.com/TexteaInc/funix

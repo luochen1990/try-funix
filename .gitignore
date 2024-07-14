@@ -1,1 +1,3 @@
 .direnv/
+*.private.*
+__pycache__/
