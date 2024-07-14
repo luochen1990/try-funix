@@ -50,6 +50,7 @@
           pkgs.python3Packages.virtualenv
           pkgs.python3Packages.setuptools
           pkgs.python3Packages.wheel
+          pkgs.python3Packages.typing-extensions
           # Add other tools you need for development
           pkgs.git
         ];
@@ -74,5 +75,16 @@
         '';
       };
     });
+
+    apps = eachSystem ({system, pkgs, ...}: {
+      default = {
+        type = "app";
+        program = "${pkgs.writeShellScript "funix-app" ''
+          source ${self.devShells.${system}.default.shellHook}
+          funix ./src
+        ''}";
+      };
+    });
+
   };
 }
