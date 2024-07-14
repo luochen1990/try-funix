@@ -1,12 +1,10 @@
-from funix import funix                      # add line one
+from funix import funix
 from IPython.display import Image
-from openai import OpenAI                    # pip install openai
-import os
+from openai import OpenAI
 
-# 初始化OpenAI客户端
 client = OpenAI()
 
-@funix()                                     # add line two
+@funix()
 def dalle(prompt: str = "a cat") -> Image:
     response = client.images.generate(prompt=prompt)
     return response.data[0].url
