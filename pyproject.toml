@@ -7,6 +7,7 @@ authors = ["luochen1990@gmail.com"]
 [tool.poetry.dependencies]
 python = ">=3.10,<4"
 funix = "^0.5.8"
+openai = "^1.35.13"
 
 [tool.poetry.dev-dependencies]
 
