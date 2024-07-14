@@ -5,8 +5,8 @@ description = "just a test of funix"
 authors = ["luochen1990@gmail.com"]
 
 [tool.poetry.dependencies]
-python = ">=3.10"
-requests = ">=2.25.1"
+python = ">=3.10,<4"
+funix = "^0.5.8"
 
 [tool.poetry.dev-dependencies]
 
