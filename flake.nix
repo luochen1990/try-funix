@@ -39,7 +39,7 @@
           #export PROMPT_COMMAND='PS1="\[\033[01;32m\]venv-py${pyver}\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ ";unset PROMPT_COMMAND'
           export PROMPT_COMMAND='PS1="";unset PROMPT_COMMAND'
 
-          export PATH=$(poetry env info --path):$PATH
+          export PATH=$(poetry env info --path)/bin:$PATH
         '';
       };
 
