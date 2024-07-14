@@ -8,6 +8,7 @@ authors = ["luochen1990@gmail.com"]
 python = ">=3.10,<4"
 funix = "^0.5.8"
 openai = "^1.35.13"
+ipython = "^8.26.0"
 
 [tool.poetry.dev-dependencies]
 
