@@ -9,6 +9,7 @@ python = ">=3.10,<4"
 funix = "^0.5.8"
 openai = "^1.35.13"
 ipython = "^8.26.0"
+ipywidgets = "^8.1.3"
 
 [tool.poetry.dev-dependencies]
 
