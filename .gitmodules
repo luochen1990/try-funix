@@ -1,3 +1,4 @@
 [submodule "funix"]
 	path = funix
+	branch = main
 	url = https://github.com/TexteaInc/funix
